@@ -41,7 +41,6 @@ function onModeClick(){
         isFilling = true;
         modeBtn.innerText = "🖌️Draw";
     }
-
 }
 
 function onMove(event){
