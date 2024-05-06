@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatoble" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY_PAINTING</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<div class="color-options">
+    <input type="color" id="color" />
+    <div class="color-option" style="background-color: #EA2027;" data-color="#EA2027"></div>
+    <div class="color-option" style="background-color: #EE5A24;" data-color="#EE5A24"></div>
+    <div class="color-option" style="background-color: #FFC312;" data-color="#FFC312"></div>
+    <div class="color-option" style="background-color: #C4E538;" data-color="#C4E538"></div>
+    <div class="color-option" style="background-color: #009432;" data-color="#009432"></div>
+    <div class="color-option" style="background-color: #0652DD;" data-color="#0652DD"></div>
+    <div class="color-option" style="background-color: #5758BB;" data-color="#5758BB"></div>
+    <div class="color-option" style="background-color:#a55eea;" data-color="#a55eea"></div>
+    <div class="color-option" style="background-color: #FDA7DF;" data-color="#FDA7DF"></div>
+    <div class="color-option" style="background-color: #000000;" data-color="#000000"></div>
+    <div class="color-option" style="background-color: #FFFFFF;" data-color="#FFFFFF"></div>
+</div>
+<canvas></canvas>
+<div class="btns">
+    <span>Pencil Width</span>
+    <input id="line-width" type="range" min="1" max="70" value="35" step="1" />
+    <button id="mode-btn">🪣Fill</button>
+    <button id="destroy-btn">💣Destroy</button>
+    <button id="eraser-btn">❌Erase</button>
+
+    <label for="file">📷Add Photo</label>
+    <input type="file" accept="image/*" id="file" />
+    <input type="text" placeholder="Add text here :D" id="text" />
+    <button id="textType-btn">Text Type > Fill🪣</button>
+
+    <div>
+        <div>Font Size</div>
+        <select id="font-size">
+            <optgroup label="font-size">Font Size</optgroup>
+            <option value="48">48px</option>
+            <option value="72">72px</option>
+            <option value="96">96px</option>
+            <option value="110">110px</option>
+            <option value="134">134px</option>
+            <option value="158">158px</option>
+            <option value="182">182px</option>
+        </select>
+    </div>
+    <div>
+        <div>Font Family</div>
+        <select id="font-family">
+            <optgroup label="font-family">Font Family</optgroup>
+            <option value="serif">Serif</option>
+            <option value="sans-serif">Sans-serif</option>
+            <option value="monospace">Monospace</option>
+            <option value="cursive">cursive</option>
+        </select>
+    </div>
+    <div>
+        <div>Font Style</div>
+        <select id="font-style">
+            <optgroup label="font-style">Font Style</optgroup>
+            <option value="normal">Normal</option>
+            <option value="italic">Italic</option>
+        </select>
+    </div>
+
+    <button id="save">🖼️Save image</button>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+
+</html>
